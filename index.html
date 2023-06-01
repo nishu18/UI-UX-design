@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media only screen and (max-width: 750px) {
+           
+
+            .box {
+                width: 100%;
+            }
+
+            .request-item {
+                width: 100%;
+            }
+
+            .flex-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            /* .col{
+                flex-direction: column;
+                gap: 73px;
+            } */
+
+            .flex-column {
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .container-item {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 420px) {
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div
+        style="display: flex;  flex-direction: column;  background: linear-gradient(180deg, #D4F9DF 0.35%, #FFFFFF 6.81%); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  border-radius: 8px; gap: 12px; padding: 16px; margin: 0 auto;">
+        <div style=" display: flex; justify-content: space-between;  gap: 12px;  flex-wrap: wrap;">
+            <div
+                style="   display: flex; flex-direction: row;  align-items: center;  padding: 6px;  gap: 0px; width: 240px; height: 51px;  background: #FFFFFF;  border: 1px solid #F0F3F6; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+                <div
+                    style=" background: #DFE3E6; width: 24px; height: 24px; display: flex;  justify-content: center;  align-items: center;  border-radius: 50%;">
+                    <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAANCAYAAACdKY9CAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE2SURBVHgBjVHRTcMwFDzbCQ2ID4+QDWCEfKI2FekEZQQ6QekE7QbQCdJCivijTEBHaCcgSCCZJvXDDjJKQa16P37v6d7ZvmOoQSapVGuRgLOQwN+Yt56qSWdZ5zBXBPGsD1AErcdmYalBkgMJiBP8YrC12Ghnw0Yru3a935yd/wpdpOFxnL3KKJW250Hz/ooRvX/N4pEjCU5DV6unzpJAPXXqVYIcnHdRlnfYA5W158T4mb3Fcyp/SUH8EFXnR7nI550cpFefJ0ehRwT5T/Ln49WCCmDFcuNOLriWRil7xgFwRhjn6KXu0C4Uj62FfSZXXjniDN0gScN9C0EruzVHVAVnvWaenxLYZKMxtWrVvG1Iohig8PtgtDJu3bAtFZMJCXFpcpEbzXp2JoROQRhbMg6BS9jhGyCwgHnvIrKhAAAAAElFTkSuQmCC" />                </div>
+                <div>
+                    <p>On-time deliveries yesterday</p>
+                    <h1>90%</h1>
+                </div>
+            </div>
+            <div
+                style="   display: flex; flex-direction: row;  align-items: center;  padding: 6px;  gap: 0px; width: 240px; height: 51px;  background: #FFFFFF;  border: 1px solid #F0F3F6; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+                <div style=" background: #DFE3E6;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;">
+<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAYAAAAGuM1UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEASURBVHgBbVDRTcMwEPVdHJHPdgJgk/CLXJRMgJigdIJ2BDYoTNBKSQSfZQIyQkYIEkJGjv2wg1JcqSfdne7pvdO7I+HjQjVLEm4uzgRA/U+jnqaZM1XlBPd4lizEjBjLGJNjJep0rTYTmKlmDeCTrHmGTO/90g1btN+vd3t5lBa7WTakO5BohXMF2eEmWnwAUZHeNh0foX3ZexPv5FAIT9ZvZRcJcueZzNjKfxtVHroFlyYik7/D1zWNA7pJkIO4B+xLwvhIVB2/qXOEFQneBhHrenHQ0swZuJL2z69/AI3p8fCQgHtyq6vFNU/+MWBlk+Qy+zLlyV2DeQh46AH6BU+KeKBpLEuNAAAAAElFTkSuQmCC" />                </div>
+                <div>
+                    <p>On-time deliveries yesterday</p>
+                    <h1>300</h1>
+                </div>
+            </div>
+            <div
+                style="   display: flex; flex-direction: row;  align-items: center;  padding: 6px;  gap: 0px; width: 240px; height: 51px;  background: #FFFFFF;  border: 1px solid #F0F3F6; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+                <div style=" background: #DFE3E6;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;">
+<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAYAAAAGuM1UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEOSURBVHgBdZHBbcIwGIXfbwcpPVTNCIyQDZJeCShkg7JBmQAxAe0EzQYECFJvTTfoCGGDSK2EaRL/tamI4BBfbD3933vPNqFnuaPtE6QIbsS6Xjp9AAghmFM4TdmZfKPqAHe8CwERMLN32o/nZ9EMqyzpAGUld7oeonY+CNgwdEZECy9ce6onWFgHJqqO+eRZ5ZOCGRt1L6c397GmXVMrRNu0Zfki0fosZSxafWBiD0Qpg1ZmLwUDxzxKhAU0IZOCVyzkg26xZPAXBAVgvBF4ftpFiYY+DEZ7/wwIUGXCCnMMLyBk82jyZ8wU20pEiKX+/X8lI/pE+vPup3mtiqS6ql+a/xiiHSzM0Ey9J+Uf4Lpz3yZsrjsAAAAASUVORK5CYII=" />                </div>
+                <div>
+                    <p>On-time deliveries yesterday</p>
+                    <h1>600MT</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- second container -->
+        <div
+            style="    display: flex; align-items: center; gap: 20px;background: #084CB4; border-right: 1px solid #F0F3F6; height: 49px; padding: 6px;">
+            <div style="display: flex; gap: 20px;">
+                <div
+                    style="width: 10px; height: 10px; margin-top: 5px; background: #98FB25; box-shadow: 0px 2px 2px #81E012; border-radius: 50%;">
+                </div>
+                <div>
+                    <h3>Live (At 10 AM)</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- third container -->
+        <div class="container" style="display: flex; gap: 16px;">
+            <div class="container-item"
+                style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px; width: 100%; background: #E8B5FC; border-radius: 8px; padding: 16px;">
+                <h2>Vehicle Requests</h2>
+                <div
+                    style="display: flex; flex-direction:  column; width:100%; justify-content: center; align-items: flex-start; padding: 8px; gap: 20px; background: #FBF2FF; border-radius: 8px;">
+                    <div style="display: flex; gap: 4px;">
+                        <input type="radio" id="option1" name="options" value="option1">
+                        <h3>Open VR</h3>
+                    </div>
+                    <div style="display: flex; gap: 80px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <h4>200 MT</h4>
+                            <p>23 Total</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <h5>05 MT</h5>
+                            <div style="display: flex; gap: 2px;"><img alt="" style="width: 12px; height: 12px; margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADkSURBVHgBjVHBTcNAEJxZRwpPl+A84QOpAOcPQnRgKjB0khaoACkNkFSQPBBfXwl8jYKHdeIkJ8WKPK+72dmd1Q7RYf2RpVcjKwXl/s07ekNqfv0Q3g86duJsnPDTfxn6EeqtZtPnEHYN34tJdUEcN02Tr0VWkCziSiO9OJf6Mx6SJkBtXigxEDTem+90h+HIrY812G1jeoMQzmvA8txbr5SV9Z9mDb3xhI2p0arPhVIxHrEy8enIeSZsA/MM1kPOevNYTczD+KFb9+0bi+nB7Vxidp8JSoLd5bQUsPrdYt4Obpl/1WhS+x/zJ0cAAAAASUVORK5CYII=" />Total Delay</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <h5>05 MT</h5>
+                            <div style="display: flex; gap: 2px;"><img alt="" style="width: 12px; height: 12px; margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgBjVHLTQMxFHzzgAC3lLBUQKggm04CXLitlQ4oAGRuXEBQCUkFpAO2BJRLvvsmdn5SnGiVkWxZo5k3mmfIBnSuuRhpQTCnII8ciKFAfOPj5XurQ7zGTy7Tuf6EZybHUdqFda7ffbkyTB97fzXinalR2Z2OH3rdVGyU+3gSQzZROFVFISfiDNpWIVunGijMz49PknYlxGYne1AI+geTKLlSbw8jMNSKNkh5E3k24VvKA+bBrmvOVH9Deib1BcrLz9cbxZf/N7NOJOrEK40kreKfhLUVIbu11rEfqg+uFvRxcOSWtahanLv6COMAAAAASUVORK5CYII=" />23 Total</div>
+                              
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: flex-start; padding: 0px 10px; gap: 4px; width: 100%; height: 186px; background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px;">
+                    <div style="display: flex; gap :24px;">
+                      <div style="flex-basis: 33.33%;">Plant Wise Transporter wise</div>
+                      <div style="flex-basis: 33.33%;">Pending (in MT)</div>
+                      <div style="flex-basis: 33.33%;">Delay (in MT)</div>
+                    </div>
+                    <div class="col" style="display: flex; gap: 127px;">
+                      <div >SGDI</div>
+                      <div >30</div>
+                      <div >30</div>
+                    </div>
+                    <div style="display: flex; gap: 127px;">
+                      <div >SGDI</div>
+                      <div >30</div>
+                      <div >30</div>
+                    </div>
+                    <div style="display: flex; gap: 127px;">
+                      <div>SGDI</div>
+                      <div >30</div>
+                      <div >30</div>
+                    </div>
+                    <div style="display: flex; gap: 127px;">
+                      <div >SGDI</div>
+                      <div>30</div>
+                      <div>30</div>
+                    </div>
+                    <div style="display: flex; gap: 127px;">
+                      <div>SGDI</div>
+                      <div >30</div>
+                      <div>30</div>
+                    </div>
+                    
+                  </div>
+                  <div style="display: flex; flex-direction: column;  padding: 2px 10px; gap: 7px; width: 100%;  background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px;">
+                    
+                        <div style="display: flex; gap: 74px; ">
+                            <div>Transporter</div>
+                            <div>Pending</div>
+                            <div>Delay</div>
+                        </div>
+                        <div style="display: flex; gap: 102px; ">
+                            <div>CII                .</div>
+                            <div>30 MT</div>
+                            <div>20 MT</div>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="box"
+                style="align-items: flex-start;  width: 100%; border-radius: 8px; padding: 16px; display: flex; flex-direction: column; justify-content: flex-start;  gap: 26px; background: #A4D2FF; border-radius: 8px;">
+                <h2
+                    style="font-style: normal; display: flex; justify-content: flex-start; font-weight: 600; font-size: 16px; line-height: 19px;">
+                    Unloading</h2>
+                <div class="request-item"
+                    style="display: flex; flex-direction: column; align-items: flex-start; padding: 10px; background: #E7F3FF; border: 1px solid #F0F3F6; border-radius: 8px; width:100%; gap: 20px;">
+                    <div style="font-weight: 500; font-size: 14px; line-height: 16px; color: #5A6872;">Vehicle Unloading
+                    </div>
+                    <div
+                        style="font-style: normal; display: flex; flex-direction: column; font-weight: 500; font-size: 16px; line-height: 19px; color: #152935;">
+                        <div>190</div>
+                        <div>At Consignee</div>
+                    </div>
+                    <div class="request-item"
+                        style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 8px; gap: 20px; background: #E7F3FF; border-radius: 8px;">
+                        <div style="display: flex; gap: 80px;">
+                            <div style="display: flex; flex-direction: column;">
+                                <h4>200 MT</h4>
+                                <p>23 Total</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <h5>05 MT</h5>
+                                <div style="display: flex; gap: 2px;"><img alt="" style="width: 12px; height: 12px; margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADkSURBVHgBjVHBTcNAEJxZRwpPl+A84QOpAOcPQnRgKjB0khaoACkNkFSQPBBfXwl8jYKHdeIkJ8WKPK+72dmd1Q7RYf2RpVcjKwXl/s07ekNqfv0Q3g86duJsnPDTfxn6EeqtZtPnEHYN34tJdUEcN02Tr0VWkCziSiO9OJf6Mx6SJkBtXigxEDTem+90h+HIrY812G1jeoMQzmvA8txbr5SV9Z9mDb3xhI2p0arPhVIxHrEy8enIeSZsA/MM1kPOevNYTczD+KFb9+0bi+nB7Vxidp8JSoLd5bQUsPrdYt4Obpl/1WhS+x/zJ0cAAAAASUVORK5CYII=" />23 Total</div>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <h5>05 MT</h5>
+                                <div style="display: flex; gap: 2px;"><img alt="" style="width: 12px; height: 12px; margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgBjVHLTQMxFHzzgAC3lLBUQKggm04CXLitlQ4oAGRuXEBQCUkFpAO2BJRLvvsmdn5SnGiVkWxZo5k3mmfIBnSuuRhpQTCnII8ciKFAfOPj5XurQ7zGTy7Tuf6EZybHUdqFda7ffbkyTB97fzXinalR2Z2OH3rdVGyU+3gSQzZROFVFISfiDNpWIVunGijMz49PknYlxGYne1AI+geTKLlSbw8jMNSKNkh5E3k24VvKA+bBrmvOVH9Deib1BcrLz9cbxZf/N7NOJOrEK40kreKfhLUVIbu11rEfqg+uFvRxcOSWtahanLv6COMAAAAASUVORK5CYII=" />23 Total</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="display: flex; flex-direction: column; width:100%; padding: 8px; gap: 26px; background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px; height: 50%;">
+                    <div
+                        style="font-style: normal; display: flex; justify-content: flex-start; font-weight: 514; font-size: 14px; line-height: 14px; color: #5A6872;">
+                        Consignee wise Detained Vehicles (Top 3)</div>
+                    <ul style="list-style-type: disc; margin-left: 20px;">
+                        <li>02 Vehicles i.e., 30 MT by MPC Pvt Ltd delayed.</li>
+                        <hr style="width: 100%; margin-top: 12px;">
+                        <li>01 vehicle i.e., 30 MT by Pooja Forge Pvt Ltd delayed.</li>
+                        <hr style="width: 100%; margin-top: 12px;">
+                        <li>01 Vehicle i.e., 30 MT by MPC Pvt Ltd delayed.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- fourth container -->
+        <div class="container" style="display: flex; gap: 16px;">
+            <div class="container-item"
+                style="flex: 1 1 100%; max-width: 100%; background: #99F1DB; border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 22px;">
+                <h2>Shipments</h2>
+                <div style="background: #99F1DB; border-radius: 8px; width: 100%;">
+                    <div
+                        style="background: #FFFFFF; height: 32px; border-bottom: 1px solid #F5F7FA; border-radius: 8px 8px 0 0; padding: 10px;">
+                        Ongoing Shipments</div>
+                    <div style="background: #ECFFFB; border-radius: 0 0 8px 8px;  padding: 10px;">
+                        <div style="display: flex; gap: 20px;">
+                            <div style="display: flex; flex-direction: column;">
+                                <h4>190</h4>
+                                <p>In Transit</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <h4>01</h4>
+                                <p>EDD Breached</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <h4>05</h4>
+                                <p>Active</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <h4>06</h4>
+                                <p>Disconnected</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 20px;">
+                            <div style="display: flex; flex-direction: column;">
+                                <h4>190</h4>
+                                <p>In Transit</p>
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <h4>01</h4>
+                                <div style="display: flex; gap: 2px;"><img alt="" style="width: 12px; height: 12px; margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADkSURBVHgBjVHBTcNAEJxZRwpPl+A84QOpAOcPQnRgKjB0khaoACkNkFSQPBBfXwl8jYKHdeIkJ8WKPK+72dmd1Q7RYf2RpVcjKwXl/s07ekNqfv0Q3g86duJsnPDTfxn6EeqtZtPnEHYN34tJdUEcN02Tr0VWkCziSiO9OJf6Mx6SJkBtXigxEDTem+90h+HIrY812G1jeoMQzmvA8txbr5SV9Z9mDb3xhI2p0arPhVIxHrEy8enIeSZsA/MM1kPOevNYTczD+KFb9+0bi+nB7Vxidp8JSoLd5bQUsPrdYt4Obpl/1WhS+x/zJ0cAAAAASUVORK5CYII=" />EDD Breached</div>
+
+
+                            </div>
+                            <div style="display: flex; flex-direction: column;">
+                                <h4>05</h4>
+                                <div style="display: flex; gap: 2px;"><img alt="" style="width: 12px; height: 12px; margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVHgBjVHLTQMxFHzzgAC3lLBUQKggm04CXLitlQ4oAGRuXEBQCUkFpAO2BJRLvvsmdn5SnGiVkWxZo5k3mmfIBnSuuRhpQTCnII8ciKFAfOPj5XurQ7zGTy7Tuf6EZybHUdqFda7ffbkyTB97fzXinalR2Z2OH3rdVGyU+3gSQzZROFVFISfiDNpWIVunGijMz49PknYlxGYne1AI+geTKLlSbw8jMNSKNkh5E3k24VvKA+bBrmvOVH9Deib1BcrLz9cbxZf/N7NOJOrEK40kreKfhLUVIbu11rEfqg+uFvRxcOSWtahanLv6COMAAAAASUVORK5CYII=" />EDD Breached</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px; padding: 8px; margin-top: 16px;     display: flex; flex-direction: column; gap: 24px;">
+                    <div style="font-weight: 514; font-size: 14px; line-height: 14px; color: #5A6872;">Consignee wise
+                        Detained Vehicles (Top 3)</div>
+                    <ul style="list-style-type: disc; margin-left: 20px; display: flex; flex-direction: column; gap: 8px;">
+                        <li>02 Vehicles i.e., 30 MT by MPC Pvt Ltd delayed.</li>
+                        <hr style="width: 100%; margin-top: 12px;">
+                        <li>01 vehicle i.e., 30 MT by Pooja Forge Pvt Ltd delayed.</li>
+                        <hr style="width: 100%; margin-top: 12px;">
+                        <li>01 Vehicle i.e., 30 MT by MPC Pvt Ltd delayed.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-item"
+                style="flex: 1 1 100%; max-width: 100%; background: #FDECA6; border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 25px;">
+                <h2>Dispatch</h2>
+                <div style="background: #FBF2FF; border-radius: 8px; padding: 8px;">
+                    <div style="display: flex; gap: 80px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div>Vehicle In Plant</div>
+                            <div>05</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="display: flex; gap: 2px;"><img alt="" style="    width: 12px; height: 12px; margin-top: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgBhdHBFYIwDADQJPI4M4JswAqM4ATO4giO4AhOwArdQEboxUufpjaIfW1JMSdI8l/aFEGJx9R17ctN8u2aduxHa8se3EHDmjIaxj8IaphqiD1eGeCylgepSU8GtUk+TEHPczI1w7RzPPCejkUqYqohYu5AjwVTpQgesQaXezSyLW0qHeD8ayqQcc92JFmx4JAyaZ3fcGPAu4b6k7XxHTdLQphDo43/CfqWk6huuEAbqGIFqTDDYTEakvgAoXKRb3EeKykAAAAASUVORK5CYII=" />SLA Breach</div>
+                            <div>01 Vehicle</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px; padding: 10px; margin-top: 16px;     display: flex;  flex-direction: column;   gap: 10px">
+                    <div>Material-wise Vehicles</div>
+                    <div style="display: flex; gap: 16px; font-weight: bold;">
+                        <div>Material</div>
+                        <div>Vehicles</div>
+                        <div>On Time (in MT)</div>
+                        <div>Delay (in MT)</div>
+                    </div>
+                    <div style="display: flex; gap: 78px;">
+                        <div>DI</div>
+                        <div>30</div>
+                        <div>30</div>
+                        <div>200</div>
+                    </div>
+                    <div style="display: flex; gap: 78px;">
+                        <div>DI</div>
+                        <div>30</div>
+                        <div>30</div>
+                        <div>200</div>
+                    </div>
+                    <div style="display: flex; gap: 58px;">
+                        <div>SGDI</div>
+                        <div>30</div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div style="display: flex; gap: 78px;">
+                        <div>DI</div>
+                        <div>30</div>
+                        <div>30</div>
+                        <div>200</div>
+                    </div>
+                    <div style="display: flex; gap: 78px;">
+                        <div>DI</div>
+                        <div>30</div>
+                        <div>30</div>
+                        <div>200</div>
+                    </div>
+                    <div style="display: flex; gap: 78px;">
+                        <div>DI</div>
+                        <div>30</div>
+                        <div>30</div>
+                        <div>200</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- fifth container -->
+
+        <div
+            style="    display: flex; align-items: center; gap: 20px;background: #084CB4; padding: 6px; border-right: 1px solid #F0F3F6; height: 49px;">
+            <div style="display: flex; gap: 20px;">
+                <div
+                    style="width: 10px; height: 10px; background: #8C9BA5; border-radius: 50%; box-shadow: 0px 2px 2px #8C9BA5; margin-top: 5px;">
+                </div>
+                <div>
+                    <h3>Yesterday's Summary</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- sixth container -->
+
+        <div class="container" style="display: flex; gap: 16px;">
+            <div class="container-item"
+                style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px; width: 100%; background: #E8B5FC; border-radius: 8px; padding: 16px;">
+                <h2>Vehicle Requests</h2>
+                <div
+                    style="display: flex; flex-direction:  column; width:100%; justify-content: center; align-items: flex-start; padding: 8px; gap: 20px; background: #FBF2FF; border-radius: 8px;">
+                    <div style="display: flex; gap:4px">
+                        <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGbSURBVHgBtVMxUsJQEN39CWMKi3gCqay5gdA5EMdQWsENlBMAN6C1YmhsAU1qcgNpHQtjZyfOWCRO8tf9CISEZBiZcYv8+Zvdty/7XhAKwqg/tAHFOSCNAufSK9XdiibgSr0LnEY/W4+5IPa4DLE+A8KyuhPAggvNpIJqCrwQyLTH5neoVWNNayGQDQXBTXOMZV8exfNg0vRTQIbldnlSD/4YRDANXcsWSYI+4YBAAR/q3AAhycXeLiKfECeZ3FsaSIibfSAQR7XwsdHkqX5CCVpKnOWOjIYz5EQ707mSGLtrEMOARRCVxpyspkoZWAArxU3VHQYCX1niHi+zswYJo9JsB0SFXKlmXLBvNPYNYjn9NdBhRQZL6syE/VTJYiiPSYm1RH7lZCGG2UIkGJBgT1F6yPYKFHN9c0Vh5tmcEG7VozAQT9WRqIZkwgFBEk7UuWFkfEWD4Fj3QC2ToJXdV7qbfESYxkCeKMXzJZG8ut8/nZ6KgaAduNZoO6Xl1cmX+3f97JqHorLGHbNtRjo+M0uTR3uBY/Xhv+IHEMem8agnXosAAAAASUVORK5CYII=" />
+                        <h3>New VR</h3>
+                    </div>
+                    <div style="display: flex; gap: 80px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <h4>28 MT</h4>
+                            <p>10 Total</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    style="display: flex; flex-direction: column;height:238px; justify-content: center;  padding: 0px 10px; gap: 12px; width: 100%;  background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px;">
+                    <div>Placed</div>
+                    <div>40 trucks (400 MT)</div>
+                    <div>
+                        <div style="display: flex;">
+                            <div style="display: flex; gap: 2px;"><img style="    width: 16px; height: 17px; margin-top: 2px;" src="images/seven.png" alt="">02 Vehicles(8%) were placed late</div>
+
+                        
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 80px; background: #FFFFFF; padding: 8px;">
+                        <div style="display: flex; flex-direction: column;">
+                            <h4>200 MT</h4>
+                            <p>23 Total</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <h5>05 MT</h5>
+
+                            <div style="display: flex; gap: 2px;"><img style="    width: 12px; height: 12px; margin-top: 5px;" src="images/four.png" alt="">24 +Hrs</div>
+
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <h5>05 MT</h5>
+                            <div style="display: flex; gap: 2px;"><img style="    width: 12px; height: 12px; margin-top: 5px;" src="images/five.png" alt="">24 +Hrs</div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="container-item"
+                style="flex: 1 1 100%; max-width: 100%; background: #99F1DB; border-radius: 8px; padding: 16px;">
+                <h2>Unloading</h2>
+                <div
+                    style="display: flex; gap: 5px; flex-direction: column; border-radius: 8px; padding: 16px; width: 100%; background: #FFFFFF;">
+                    <div
+                        style=" height: 30px; border-bottom:  1px solid #F5F7FA; border-radius: 8px 8px 0 0; color: #5A6872;;">
+                        Vehicle Unloading</div>
+                    <div style="color: #5A6872; ">Unloading Completed</div>
+                    <div style="color: #152935;">18 trucks (300 MT)</div>
+
+                    <div style="display: flex; gap: 20px;     margin-top: 14px; ">
+                        <div style="display: flex; flex-direction: column;">
+                            <div>
+                                <div style="display: flex; gap: 2px; color: #5A6872;"><img style="    width: 12px; height: 12px; margin-top: 5px;" src="images/eight.png" alt="">SLA Breach</div>
+
+                                
+                            </div>
+                            <p>In Transit</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <div>
+                                <div style="display: flex; gap: 2px; color: #5A6872;    "><img style="    width: 12px; height: 12px; margin-top: 5px;" src="images/nine.png" alt="">SLA Breach</div>
+
+                            </div>
+                            <p>EDD Breached</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div
+                    style="background: #FFFFFF; display: flex; flex-direction: column; border: 1px solid #F0F3F6; border-radius: 8px;gap: 9px; padding: 8px; margin-top: 16px;">
+                    <div style="color: #5A6872;">Consignee wise TAT</div>
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <div style=" display: flex; gap: 80px;">
+                            <div>Consignee</div>
+                            <div>Time</div>
+                            <div>No.of Vehicle</div>
+                        </div>
+                      
+                        <div style="display: flex; gap: 65px;">
+                            <div style=" display: flex; flex-direction: column; gap: 10px;">
+                                <div>MPC Pvt Ltd</div>
+                                <div>Pooja Forge</div>
+                                <div>Pooja Forge</div>
+                                <div>Pooja Forge</div>
+                            </div>
+    
+                            <div style=" display: flex; flex-direction: column; gap: 10px;">
+                                <div>24 Hrs</div>
+                                <div>24 Hrs</div>
+                                <div>24 Hrs</div>
+                                <div>24 Hrs</div>
+                            </div>
+    
+                            <div style=" display: flex; flex-direction: column; gap: 10px;">
+                                <div>10</div>
+                                <div>20</div>
+                                <div>07</div>
+                                <div>08</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- seventh container -->
+
+        <div class="container" style="display: flex; gap: 16px;">
+            <div class="container-item"
+                style="flex: 1 1 100%; max-width: 100%; display: flex; flex-direction: column; gap: 10px; background: #99F1DB; border-radius: 8px; padding: 16px;">
+                <h2>Shipments</h2>
+                <div
+                    style="display: flex; gap: 5px; flex-direction: column; border-radius: 8px; padding: 16px; width: 100%; background: #FFFFFF;">
+                    <div
+                        style=" height: 30px; border-bottom:  1px solid #F5F7FA; border-radius: 8px 8px 0 0; color: #5A6872;;">
+                        Vehicle Unloading</div>
+                    <div style="color: #5A6872; ">Unloading Completed</div>
+                    <div style="color: #152935;">18 trucks (300 MT)</div>
+
+                    <div style="display: flex; gap: 20px;     margin-top: 14px; ">
+                        <div style="display: flex; flex-direction: column;">
+                            <div>
+                                <div style="display: flex; gap: 2px; color: #5A6872;"><img style="    width: 12px; height: 12px; margin-top: 5px;" src="images/ten.png" alt="">Reported late</div>
+
+                                
+                            </div>
+                            <p>08 Vehicle (18%)</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <div>
+                                <div style="display: flex; gap: 2px; color: #5A6872;    "><img style="    width: 12px; height: 12px; margin-top: 5px;" src="images/nine.png" alt="">Average TAT</div>
+
+                            </div>
+                            <p>5.5 Hours</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div
+                    style="background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px; padding: 8px; margin-top: 16px; display: flex; flex-direction: column; gap: 26px;">
+                    <div style="font-weight: 514; font-size: 14px; line-height: 14px; color: #5A6872;">Tracking Compliance</div>
+                    <ul style="list-style-type: disc; margin-left: 20px; display: flex; flex-direction: column; gap: 4px;">
+                        <li>5% Shipments are disconnected i.e. 30 Vehicles in Transit</li>
+                        <hr style="width: 100%; margin-top: 12px;">
+                        <li>4% Vehicles are in Blackout State i.e 20 Active Shipments..</li>
+                        <hr style="width: 100%; margin-top: 12px;">
+                        <li>4% Vehicles are in Blackout State i.e 20 Active Shipments..</li>
+                    </ul>
+                </div>
+            </div>
+           
+           <div class="container-item" 
+                style="flex: 1 1 100%; width: 100%; background: #FDECA6; border-radius: 8px; padding: 13px; display: flex; flex-direction: column; gap: 14px;">
+                <h2>Dispatch</h2>
+                <div style="background: #FBF2FF; border-radius: 8px; ">
+                    <div style="display: flex; gap: 20px; padding: 7px;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <div>DISPATCHED</div>
+                            <div>18 trucks <span>(300 MT)</span></div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <div style="display: flex; gap: 2px; color: #5A6872;"><img style="     margin-top: 5px;" src="images/eight.png" alt="">SLABreach</div>
+                            <div>02Vehicle(8%)
+                               <span style="color: #5A6872;"> 06 hours</span></div>
+
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <div style="display: flex; gap: 2px; color: #5A6872;"><img style="      margin-top: 5px;" src="images/nine.png" alt="">SLABreach</div>
+                            <div>5.5 Hours
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; align-items: flex-start; padding: 7px; gap: 8px; background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px;">
+                    <div style="color: #5A6872;">Stagewise TAT</div>
+                    <div style="display: flex; gap: 45px;">
+                        <div style="display: flex; flex-direction: column; ">
+                            <p>DO To GI</p>
+                
+                            <h4>01 Hr </h4>
+                        </div>
+                        <div style="display: flex; flex-direction: column; ">
+                            <p>GI To TW</p>
+                
+                            <h4>03 Hrs</h4>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <p>TW To GW</p>
+                
+                            <h4>05 Hrs</h4>
+                        </div>
+                        
+                    </div>
+                    <div style="display: flex; gap: 45px; ">
+                        <div >
+                            <p>GI To TW</p>
+                
+                            <h4>01 Hr </h4>
+                        </div>
+                        <div >
+                            <p>TW To GW</p>
+                
+                            <h4>03 Hrs</h4>
+                        </div>
+                        <div>
+                            <p>Invoice To GO</p>
+                
+                            <h4>05 Hrs</h4>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column;  padding: 8px; gap: 8px;  background: #FFFFFF; border: 1px solid #F0F3F6; border-radius: 8px;">
+                       <div style="color: #5A6872;">Top Reasons</div>
+                       <ul style="list-style-type: disc; margin-left: 20px;">
+                        <li>Shipment Delayed due to 4.4 Hrs in Loading Que</li>
+                        <hr style="width: 100%; margin-top: 12px;">
+                        <li>Lunch time Contributed in 01 Hr Delay in Dispatch.</li>
+                        <hr style="width: 100%; margin-top: 12px;">
+                        <li>Lunch time Contributed in 01 Hr Delay in Dispatch.</li>
+                   
+                </div> 
+            </div> 
+        </div>
+
+    </div>
+
+</body>
+
+</html>
